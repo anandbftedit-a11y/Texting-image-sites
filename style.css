@@ -1,12 +1,11 @@
 *{
-    margin: 0px;
+    margin: 0px; 
 }
 
 body{
     background: hsl(0, 0%, 95%);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 
@@ -14,10 +13,14 @@ body{
 .heading{
     position: sticky;
     background-color: #00881d;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     font-size: 1.5em;
-    top:0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    
 }
+
 
 .navbar a{
     position: relative;
@@ -28,6 +31,7 @@ body{
     padding: 2px 20px;
     border: 2px solid rgba(255, 255, 255, 0.11); 
     border-radius: 5px;
+    
   
 }
 
@@ -38,6 +42,11 @@ body{
     position: relative;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: text-shadow-pop-top;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    
     
    
 }
@@ -46,7 +55,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-     
+    
 
 }
 
@@ -55,11 +64,25 @@ body{
     border-radius: 6px;
     background-color: hsl(0, 0%, 100%);
     margin: 10px;
+
+    
+    
+}
+
+
+.gallery div:hover{
+    animation-name: imscale;
+    animation-duration: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    
+    
 }
 
 .gallery img{
    padding: 10px;
    margin-bottom: -40px;
+   
 
 }
 
@@ -85,6 +108,61 @@ p{
     margin-bottom: 10px;
 }
 
+.menu{
+    font-size: 1.5em;
+    color: #fafafa;
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid;
+    z-index:2;
+    
+}
 
+.menu:hover{
+    animation-name: menurot;
+    animation-duration: 1s;
+}
 
+@keyframes menurot {
+   from {transform: rotateZ(180deg);}    
+}
+
+@keyframes navpos {
+   from {transform:translateY(100px);}    
+}
+
+@keyframes imscale {
+    
+    0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }   
+}
+
+@keyframes text-shadow-pop-top {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 
