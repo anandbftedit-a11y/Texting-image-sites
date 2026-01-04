@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background: hsl(0, 0%, 95%);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #CB3066, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #CB3066, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.heading{
+    position: sticky;
+    background-color: #00881d;
+    font-size: 1.5em;
+    top:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+.navbar a{
+    position: relative;
+    top: -35px;
+    color: #fafafa;
+    top: 0px;
+    text-decoration: none;
+    padding: 2px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.11); 
+    border-radius: 5px;
+  
+}
+
+
+.heading div{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     
+
+}
+
+.gallery div{
+    border: 1px solid rgba(124, 124, 124, 0.993);
+    border-radius: 6px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 10px;
+}
+
+.gallery img{
+   padding: 10px;
+   margin-bottom: -40px;
+
+}
+
+.gallery div:hover{
+    border: 1px solid rgba(255, 18, 18, 0.281);
+    border-radius: 6px;
+    background-color: hsl(0, 4%, 83%);
+}
+
+h2{
+    text-align: center;
+    color: rgb(7, 7, 7);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+}       
+
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(44, 44, 44);
+    font-size: 1.1em;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+
