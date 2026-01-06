@@ -133,7 +133,7 @@ p{
 }
 
 @keyframes imscale {
-    from {transform:scale(1.1,1.1);}
+    from {transform:scale(1.05,1.05);}
     
   
 }
@@ -148,6 +148,7 @@ p{
     opacity: 1;
   }
 }
+
 
 
 
